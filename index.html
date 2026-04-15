@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julia's Baking Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo">Julia's <span>Baking</span> Corner</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="brownies.html">Brownies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <span class="hero-eyebrow">Welcome to my kitchen!</span>
+      <h1 id="hero-title">Baked with Love,<br><em>Shared with Joy</em></h1>
+      <p>Baking is my love language. These are some of my favorite recipes, full of little tips I've learned along the way.</p>
+      <a href="#recipes" class="btn btn-primary">Browse Recipes</a>
+    </div>
+  </section>
+
+  <section class="about-strip section" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-text">
+        <span class="section-label">A little about me</span>
+        <h2 id="about-title">Why I Bake</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p>I started baking just 3 years ago. It gave me a way to slow down and be present. There's an exactness to baking that I really love, and it's so satisfying to create something delicious.</p>
+        <p>I made this website to share the recipes I come back to time and time again, with honest tips on what to watch out for and how to make each one a little more special.</p>
+      </div>
+      <div class="about-illustration" role="img" aria-label="Baking illustration">🥧</div>
+    </div>
+  </section>
+
+  <main id="recipes">
+    <section class="section" aria-labelledby="recipes-title">
+      <div class="container">
+        <span class="section-label">From my kitchen</span>
+        <h2 id="recipes-title">Favorite Recipes</h2>
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="recipe-grid">
+
+          <article class="recipe-card">
+            <div class="recipe-card-img" role="img" aria-label="Cookies">🍪</div>
+            <div class="recipe-card-body">
+              <span class="recipe-card-tag">Cookies</span>
+              <h3>Brown Butter Chocolate Chip Cookies</h3>
+              <p>The extra step of browning the butter makes these incredibly nutty and rich. These disappear fast.</p>
+              <div class="recipe-card-meta">
+                <span>45 min</span>
+                <span>24 cookies</span>
+              </div>
+              <br>
+              <a href="cookies.html" class="btn btn-outline">View Recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-card-img" role="img" aria-label="Cake">🎂</div>
+            <div class="recipe-card-body">
+              <span class="recipe-card-tag">Cakes</span>
+              <h3>Classic Vanilla Layer Cake</h3>
+              <p>Fluffy, tender layers with a silky cream cheese frosting. Perfect for any celebration — or just a Tuesday.</p>
+              <div class="recipe-card-meta">
+                <span>1 hr 15 min</span>
+                <span>12 servings</span>
+              </div>
+              <br>
+              <a href="cakes.html" class="btn btn-outline">View Recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-card-img" role="img" aria-label="Brownies">🍫</div>
+            <div class="recipe-card-body">
+              <span class="recipe-card-tag">Brownies &amp; Bars</span>
+              <h3>Fudgy Dark Chocolate Brownies</h3>
+              <p>Dense, gooey, crinkle-topped brownies that are deeply chocolatey. The secret is using good dark chocolate.</p>
+              <div class="recipe-card-meta">
+                <span>40 min</span>
+                <span>16 squares</span>
+              </div>
+              <br>
+              <a href="brownies.html" class="btn btn-outline">View Recipe</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span class="handwritten">Made with flour &amp; a whole lot of love ♥</span>
+      <p>Julia's Baking Corner &mdash; SI 539 Final Project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fudgy Dark Chocolate Brownies — Julia's Baking Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo">Julia's <span>Baking</span> Corner</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="cakes.html">Cakes</a></li>
+          <li><a href="brownies.html" class="active">Brownies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- RECIPE HERO -->
+  <section class="recipe-page-hero" aria-labelledby="recipe-title">
+    <div class="container">
+      <span class="handwritten">Brownies &amp; Bars</span>
+      <h1 id="recipe-title">Fudgy Dark Chocolate Brownies</h1>
+      <p>Dense, gooey, crinkle-topped perfection. The good-quality chocolate is non-negotiable here.</p>
+      <div class="recipe-meta-bar" aria-label="Recipe details">
+        <span>⏱ Prep: 15 min</span>
+        <span>🔥 Bake: 22–25 min</span>
+        <span>❄️ Cool: 30 min</span>
+        <span>🍫 Makes 16 squares</span>
+        <span>⭐ Difficulty: Easy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPE CONTENT GRID -->
+  <main>
+    <div class="container">
+      <div class="recipe-content-grid">
+
+        <!-- MAIN CONTENT -->
+        <div class="recipe-main">
+
+          <h2>Ingredients</h2>
+          <ul class="ingredients-list" aria-label="Ingredients — click to check off">
+            <li>8 oz dark chocolate (70%+), chopped</li>
+            <li>¾ cup (1½ sticks) unsalted butter</li>
+            <li>1¼ cups granulated sugar</li>
+            <li>3 large eggs, room temp</li>
+            <li>2 tsp vanilla extract</li>
+            <li>¾ cup all-purpose flour</li>
+            <li>¼ cup Dutch-process cocoa powder</li>
+            <li>½ tsp fine salt</li>
+            <li>½ cup chocolate chips or chunks</li>
+            <li>Flaky salt for topping</li>
+          </ul>
+          <p style="font-size:0.82rem; color: var(--color-text-light); margin-top: 0.5rem;"><em>💡 Click ingredients to check them off as you gather them!</em></p>
+
+          <h2>Instructions</h2>
+          <ol class="steps-list" aria-label="Recipe steps — click a step to highlight it">
+            <li><span class="step-text"><strong>Prep your pan:</strong> Preheat oven to 350°F (175°C). Line an 8×8-inch baking pan with parchment paper, leaving an overhang on the sides. This is your "handle" to lift the brownies out cleanly — don't skip it!</span></li>
+            <li><span class="step-text"><strong>Melt chocolate &amp; butter:</strong> Combine chopped chocolate and butter in a large heatproof bowl. Melt together over a double boiler (a saucepan with an inch of simmering water), stirring until smooth. Alternatively, microwave in 30-second bursts, stirring between each. Remove from heat and let cool 5 minutes.</span></li>
+            <li><span class="step-text"><strong>Add sugar &amp; eggs:</strong> Whisk sugar into the melted chocolate. Add eggs one at a time, whisking well after each. Whisk vigorously for about 1 minute — this incorporates air and is what creates the crinkle top! Add vanilla.</span></li>
+            <li><span class="step-text"><strong>Add dry ingredients:</strong> Sift in flour, cocoa, and salt. Switch to a spatula and fold until just combined — stop as soon as no dry streaks remain. Fold in chocolate chips.</span></li>
+            <li><span class="step-text"><strong>Bake:</strong> Pour batter into the prepared pan and spread evenly. Sprinkle with flaky salt. Bake 22–25 minutes. The edges should look set and the center should have a slight jiggle. A toothpick should come out with moist, fudgy crumbs — not clean!</span></li>
+            <li><span class="step-text"><strong>Cool before cutting:</strong> Let the brownies cool in the pan for at least 30 minutes. For the cleanest slices, refrigerate for an hour before cutting. Use the parchment overhang to lift out, then slice with a sharp knife, wiping between cuts.</span></li>
+          </ol>
+
+        </div>
+
+        <!-- TIPS SIDEBAR -->
+        <aside class="tips-sidebar" aria-label="Baker's tips">
+          <p class="sidebar-title">Baker's Tips ✨</p>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-chocolate')" onkeypress="if(event.key==='Enter') openModal('modal-chocolate')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🍫</span>
+              Choosing Your Chocolate
+            </div>
+            <p>Bar chocolate vs. chips vs. cocoa — why it matters more than you think.</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-crinkle')" onkeypress="if(event.key==='Enter') openModal('modal-crinkle')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">✨</span>
+              Getting the Crinkle Top
+            </div>
+            <p>The secret to that shiny, crinkled crust that makes brownies look bakery-perfect.</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-done')" onkeypress="if(event.key==='Enter') openModal('modal-done')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🔍</span>
+              Are They Done?
+            </div>
+            <p>Fudgy brownies are always harder to judge than cake. Here's my method.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="modal-chocolate" role="dialog" aria-modal="true" aria-labelledby="modal-choc-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-chocolate')" aria-label="Close tip">✕</button>
+      <h3 id="modal-choc-title">🍫 Choosing Your Chocolate</h3>
+      <p>Use the best chocolate you can afford — it's the star of the show. I use a 70% dark chocolate bar (Lindt or Guittard are great options). Avoid chocolate chips for the melted base, as they contain stabilizers that affect the texture. Save chips or chopped chocolate for the fold-in at the end — those little pools of melted chocolate in the final brownie are magical. Dutch-process cocoa (vs. natural) gives a deeper, darker, less acidic chocolate flavor and is worth seeking out.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-crinkle" role="dialog" aria-modal="true" aria-labelledby="modal-crinkle-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-crinkle')" aria-label="Close tip">✕</button>
+      <h3 id="modal-crinkle-title">✨ Getting the Crinkle Top</h3>
+      <p>That shiny, crinkled crust comes from vigorously whisking the eggs and sugar into the melted chocolate — this dissolves the sugar and incorporates air, which rises to the surface during baking and creates that gorgeous crust. Two things help: (1) whisk hard for a full minute after adding the eggs, and (2) make sure the chocolate is not too hot when you add the eggs or you'll scramble them. Room temperature eggs also help the mixture come together smoothly.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-done" role="dialog" aria-modal="true" aria-labelledby="modal-done-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-done')" aria-label="Close tip">✕</button>
+      <h3 id="modal-done-title">🔍 Are They Done?</h3>
+      <p>The toothpick test works differently for brownies — you're NOT looking for a clean toothpick. A clean toothpick means overbaked and dry. You want moist, fudgy crumbs clinging to it. The edges should look set and slightly pull away from the pan, while the center still has a very slight jiggle. When in doubt, err on the side of underbaking — brownies continue to set as they cool. If they look perfectly done in the oven, they'll be dry by the time you eat them.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span class="handwritten">Made with flour &amp; a whole lot of love ♥</span>
+      <p>Julia's Baking Corner &mdash; SI 539 Final Project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
