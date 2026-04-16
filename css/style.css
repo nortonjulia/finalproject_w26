@@ -361,6 +361,36 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-accent-light);
 }
 
+.recipe-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.recipe-hero-text {
+  flex: 1;
+}
+
+.recipe-hero-img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .recipe-hero-inner {
+    flex-direction: column;
+  }
+
+  .recipe-hero-img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
 .recipe-page-hero h1 {
   color: #fdf6ed;
 }
@@ -462,6 +492,27 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .step-text {
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+.step-photo {
+  margin: 1rem 0 1.5rem 44px; /* 44px left indent lines it up past the step number circles */
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.step-photo img {
+  width: 100%;
+  max-width: 480px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.step-photo figcaption {
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-top: 0.4rem;
 }
 
 /* ===== TIPS SIDEBAR ===== */

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jammy Cherry Pie — Julia's Baking Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo">Julia's <span>Baking</span> Corner</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pie.html" class="active">Cherry Pie</a></li>
+          <li><a href="cake.html">Chocolate Cake</a></li>
+          <li><a href="brownies.html">Brownies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="recipe-page-hero" aria-labelledby="recipe-title">
+    <div class="container">
+      <div class="recipe-hero-inner">
+      <div class="recipe-hero-text">
+      <span class="handwritten">Pies</span>
+      <h1 id="recipe-title">Jammy Cherry Pie</h1>
+      <p>A sweet and sour cherry pie, perfect for Summer.</p>
+      <div class="recipe-meta-bar" aria-label="Recipe details">
+        <span>⏱ Prep: 20 min</span>
+        <span>⏱ Bake Time: 1 hr</span>
+        <span>Makes 1 Pie</span>
+        <span>⭐ Difficulty: Easy</span>
+      </div>
+    </div>
+    <img src="images/piefinished.jpeg" alt="Baked cherry pie" class="recipe-hero-img"/>
+    </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="recipe-content-grid">
+
+        <div class="recipe-main">
+
+          <h2>Ingredients</h2>
+          <ul class="ingredients-list" aria-label="Ingredients — click to check off">
+            <li>1 pie crust</li>
+            <li>2 pounds (about 5 cups) fresh cherries, pitted</li>
+            <li>1/3 cup granulated sugar</li>
+            <li>2 Tablespoons corn starch</li>
+            <li>1/4 teaspoon salt</li>
+            <li>1/2 teaspoon cinnamon, optional</li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>1 egg (for egg wash)</li>
+          </ul>
+          <p style="font-size:0.82rem; color: var(--color-text-light); margin-top: 0.5rem;"><em>💡 Tip: Click ingredients to check them off as you gather them!</em></p>
+
+          <h2>Instructions</h2>
+          <ol class="steps-list" aria-label="Recipe steps — click a step to highlight it">
+            <li><span class="step-text"><strong>Prep the Crust:</strong> Prepare two pie crusts according to directions. If using homemade pie crusts, make sure you have two–one for the bottom and one for the top lattice!</span></li>
+            <li><span class="step-text"><strong>Preheat Oven:</strong> When ready to make your pie, preheat the oven to 400° F.</span></li>
+            <li><span class="step-text"><strong>Cook Cherries:</strong> In medium pot over medium heat, combine half of the pitted cherries with the sugar, salt and 1 Tablespoon cornstarch. Cook the cherries down, stirring constantly until the cherries have broken down and are a jam consistency, about 8 minutes. Remove from the heat and stir in the vanilla and cinnamon if using.</span></li>
+            <li><span class="step-text"><strong>Add Cornstarch:</strong> Mix the cooked down cherries, and the remaining 1 Tablespoon of cornstarch with with the uncooked cherries. Set aside.</span></li>
+            <li><span class="step-text"><strong>Assemble the Pie:</strong> Roll out the bottom pie crust on a floured work surface, to 1/4 inch thickness. The circle should be larger than your pie pan circle (ie: if your pie pan is 9 inches, make the circle 11 inches). Carefully place dough into pie pan, pushing into the pan, leaving the overhang over the edges. Spoon the filling into the pie crust.</span></li>
+            <figure class="step-photo">
+              <img src="images/pie.jpeg" alt="Unfinished cherry pie with the top crust just assembled." />
+              <figcaption>Use two fingers on the outside, and one finger on the inside to create the scalloped edges.</figcaption>
+            </figure>
+            <li><span class="step-text"><strong>Create the Lattice Work:</strong> Roll out second pie disk into a circle big enough so it reaches the edges of the pie pan. Cut dough into strips. We cut our dough into equal width strips, but feel free to vary! Weave the threads over and under each other, draping the edges over the bottom pie crust. Have fun with it–it doesn’t have to be perfcet! After you’re done weaving the lattice, pinch the bottom and top crusts together and roll the edges in towards the pie to seal the pie. Flute the edges of the pie and smooth out any imperfections.</span></li>
+            <li><span class="step-text"><strong>Egg Wash, Bake, and Cool:</strong> In a small bowl whisk together the egg with 1 Tablespoon of water to make an egg wash. Use a pastry brush to evenly brush the pie. Bake at 400°F for 15 minutes. After 15 minutes, turn the oven down to 375°F and bake for another 30 to 45 minutes or until the cherry filling is bubbling and the crust is golden brown. Allow to cool completely before serving with ice cream or whipped cream!</span></li>
+            <figure class="step-photo">
+              <img src="images/piefinished.jpeg" alt="Baked cherry pie" />
+              <figcaption>Crust should be golden-brown and flaky!</figcaption>
+            </figure>
+          </ol>
+
+        </div>
+
+        <aside class="tips-sidebar" aria-label="Baker's tips">
+          <p class="sidebar-title">Baker's Tips ✨</p>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-browning')" onkeypress="if(event.key==='Enter') openModal('modal-browning')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🍒</span>
+              Choosing your Cherries
+            </div>
+            <p>I used half rainier and half dark sweet cherries, but you can use whatever you have on hand. Just keep in mind that rainier cherries will not produce a deep red pie like you see here!</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-chill')" onkeypress="if(event.key==='Enter') openModal('modal-chill')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🍒</span>
+              Pitting the Cherries
+            </div>
+            <p>If you don't have a cherry pitter, you can use a metal straw!</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-bake')" onkeypress="if(event.key==='Enter') openModal('modal-bake')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🍒</span>
+              Pie Crust Tip
+            </div>
+            <p>You can make a homemade pie crust, or you can use a storebought one. I recommend Pillsbury pie crusts, found in the frozen aisle.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modal-browning" role="dialog" aria-modal="true" aria-labelledby="modal-browning-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-browning')" aria-label="Close tip">✕</button>
+      <h3 id="modal-browning-title">🍒 Choosing your Cherries</h3>
+      <p>I used half rainier and half dark sweet cherries, but you can use whatever you have on hand. Just keep in mind that rainier cherries will not produce a deep red pie like you see here!</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-chill" role="dialog" aria-modal="true" aria-labelledby="modal-chill-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-chill')" aria-label="Close tip">✕</button>
+      <h3 id="modal-chill-title">🍒 Pitting the Cherries</h3>
+      <p>You have to pit your cherries before using them for the pie. If you don't have a cherry pitter, you can use a metal straw!</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-bake" role="dialog" aria-modal="true" aria-labelledby="modal-bake-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-bake')" aria-label="Close tip">✕</button>
+      <h3 id="modal-bake-title">🍒 Pie Crust Tip</h3>
+      <p>You can make a homemade pie crust, or you can use a storebought one. I recommend Pillsbury pie crusts, found in the frozen aisle.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span class="handwritten">Made with flour &amp; a whole lot of love ♥</span>
+      <p>Julia's Baking Corner &mdash; SI 539 Final Project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

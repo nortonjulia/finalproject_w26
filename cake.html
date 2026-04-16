@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Vanilla Layer Cake — Julia's Baking Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo">Julia's <span>Baking</span> Corner</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pie.html">Cherry Pie</a></li>
+          <li><a href="cake.html" class="active">Chocolate Cake</a></li>
+          <li><a href="brownies.html">Brownies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- RECIPE HERO -->
+  <section class="recipe-page-hero" aria-labelledby="recipe-title">
+    <div class="container">
+      <div class="recipe-hero-inner">
+      <div class="recipe-hero-text">
+      <span class="handwritten">Cakes</span>
+      <h1 id="recipe-title">Double Chocolate Cake</h1>
+      <p>A rich double chocolate cake, made in one bowl only.</p>
+      <div class="recipe-meta-bar" aria-label="Recipe details">
+        <span>⏱ Prep: 20 min</span>
+        <span>⏱ Bake Time: 1 hr</span>
+        <span>Makes 1 Pie</span>
+        <span>⭐ Difficulty: Super Easy</span>
+      </div>
+    </div>
+    <img src="images/cake.jpeg" alt="Chocolate cake" class="recipe-hero-img"/>
+    </div>
+    </div>
+  </section>
+
+  <!-- RECIPE CONTENT GRID -->
+  <main>
+    <div class="container">
+      <div class="recipe-content-grid">
+
+        <!-- MAIN CONTENT -->
+        <div class="recipe-main">
+
+          <h2>Ingredients</h2>
+          <ul class="ingredients-list" aria-label="Ingredients — click to check off">
+            <li>3 cups cake flour</li>
+            <li>1 tbsp baking powder</li>
+            <li>½ tsp fine salt</li>
+            <li>1 cup (2 sticks) unsalted butter, softened</li>
+            <li>2 cups granulated sugar</li>
+            <li>4 large eggs, room temp</li>
+            <li>2 tsp pure vanilla extract</li>
+            <li>1 cup whole milk, room temp</li>
+            <li>½ cup sour cream</li>
+            <li><strong>Frosting:</strong> 8 oz cream cheese</li>
+            <li>½ cup butter, softened</li>
+            <li>3 cups powdered sugar</li>
+            <li>2 tsp vanilla extract</li>
+            <li>Pinch of salt</li>
+          </ul>
+          <p style="font-size:0.82rem; color: var(--color-text-light); margin-top: 0.5rem;"><em>💡 Click ingredients to check them off as you gather them!</em></p>
+
+          <h2>Instructions</h2>
+          <ol class="steps-list" aria-label="Recipe steps — click a step to highlight it">
+            <li><span class="step-text"><strong>Prep:</strong> Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans, then line the bottoms with parchment circles. Having everything at room temperature is key for a smooth, even batter.</span></li>
+            <li><span class="step-text"><strong>Mix dry ingredients:</strong> Whisk together cake flour, baking powder, and salt in a medium bowl. Set aside. Using cake flour (not all-purpose) gives you a finer, more tender crumb.</span></li>
+            <li><span class="step-text"><strong>Cream butter &amp; sugar:</strong> In a stand mixer on medium-high, beat softened butter and sugar until very pale and fluffy, about 5 full minutes. Don't rush this step — it's what gives the cake its light texture.</span></li>
+            <li><span class="step-text"><strong>Add eggs &amp; vanilla:</strong> Add eggs one at a time, mixing well after each. Add vanilla. Scrape down the bowl between additions.</span></li>
+            <li><span class="step-text"><strong>Alternate wet &amp; dry:</strong> On low speed, add flour mixture in three parts, alternating with the milk mixture (milk + sour cream whisked together) in two parts. Begin and end with flour. Mix until just combined — a few streaks of flour are fine.</span></li>
+            <li><span class="step-text"><strong>Bake:</strong> Divide batter evenly between pans. Bake 28–32 minutes until a toothpick inserted in the center comes out with just a few moist crumbs. Don't overbake!</span></li>
+            <li><span class="step-text"><strong>Cool completely:</strong> Let cakes cool in pans 15 minutes, then turn out onto a wire rack. Cool fully before frosting — at least 45 minutes. Frosting a warm cake is a recipe for sliding frosting disaster!</span></li>
+            <li><span class="step-text"><strong>Make frosting:</strong> Beat cream cheese and butter on medium until smooth. Add powdered sugar one cup at a time. Add vanilla and salt. Beat on high for 2 minutes until fluffy.</span></li>
+            <li><span class="step-text"><strong>Assemble:</strong> Place one layer on a cake stand. Spread a generous layer of frosting on top. Add the second layer. Frost the top and sides. Run a bench scraper around the edges for a smooth finish, or swirl for a rustic look!</span></li>
+          </ol>
+
+        </div>
+
+        <!-- TIPS SIDEBAR -->
+        <aside class="tips-sidebar" aria-label="Baker's tips">
+          <p class="sidebar-title">Baker's Tips ✨</p>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-room-temp')" onkeypress="if(event.key==='Enter') openModal('modal-room-temp')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🌡️</span>
+              Room Temp Ingredients
+            </div>
+            <p>Why every recipe says this — and why it actually matters for this cake.</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-cream')" onkeypress="if(event.key==='Enter') openModal('modal-cream')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🥣</span>
+              Creaming Butter &amp; Sugar
+            </div>
+            <p>5 minutes feels like forever, but this step is the secret to a fluffy cake.</p>
+          </div>
+
+          <div class="tip-card" role="button" tabindex="0" onclick="openModal('modal-layers')" onkeypress="if(event.key==='Enter') openModal('modal-layers')" aria-haspopup="dialog">
+            <div class="tip-card-header">
+              <span class="tip-icon" aria-hidden="true">🎂</span>
+              Getting Even Layers
+            </div>
+            <p>My tricks for flat, even cake layers every single time.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="modal-room-temp" role="dialog" aria-modal="true" aria-labelledby="modal-rt-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-room-temp')" aria-label="Close tip">✕</button>
+      <h3 id="modal-rt-title">🌡️ Why Room Temp Matters</h3>
+      <p>When butter, eggs, and milk are all at room temperature, they emulsify together into a smooth, cohesive batter. Cold ingredients cause the fat to seize up and the batter to curdle or look lumpy — which leads to a denser, uneven cake. I leave my ingredients out on the counter for about an hour before baking. In a pinch: place cold eggs in warm (not hot) water for 10 minutes, and microwave milk in 10-second bursts until just slightly warm to the touch.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-cream" role="dialog" aria-modal="true" aria-labelledby="modal-cream-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-cream')" aria-label="Close tip">✕</button>
+      <h3 id="modal-cream-title">🥣 The Creaming Method</h3>
+      <p>When you beat butter and sugar together, the sharp edges of the sugar crystals cut tiny air pockets into the butter. These air pockets expand in the oven, giving the cake its light, fluffy structure. After 5 minutes, the mixture should look almost white and very fluffy. If it still looks yellow and grainy after 2 minutes, your butter was too cold — let it warm up a bit and try again. This step cannot be rushed or replicated later in the recipe.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-layers" role="dialog" aria-modal="true" aria-labelledby="modal-layers-title" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-layers')" aria-label="Close tip">✕</button>
+      <h3 id="modal-layers-title">🎂 Getting Even Layers</h3>
+      <p>Use a kitchen scale to divide the batter evenly by weight — this is more accurate than eyeballing. If your cake layers dome up in the center after baking, use a long serrated knife to level them once they're completely cool. Place one hand flat on top of the cake and saw gently through the dome. The flat side goes up when assembling (or down, on the bottom layer). Leveled cakes stack more cleanly, frost more easily, and look more professional.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span class="handwritten">Made with flour &amp; a whole lot of love ♥</span>
+      <p>Julia's Baking Corner &mdash; SI 539 Final Project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
