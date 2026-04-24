@@ -3,13 +3,13 @@
   --color-bg-card: #fffaf4;
   --color-bg-dark: #2e1f0e;
   --color-primary: #8b4513;
-  --color-primary-light: #b36f34;
+  --color-primary-light: #8b5a1e;
   --color-primary-dark: #5c2d0a;
   --color-accent: #d4956a;
   --color-accent-light: #e1a473;
   --color-text: #3b2310;
   --color-text-muted: #7a5c44;
-  --color-text-light: #a07850;
+  --color-text-light: #7a5030;
   --color-border: #e0c9b0;
   --color-tip-bg: #fef3e2;
   --color-tip-border: #af884a;
@@ -211,12 +211,12 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .btn-outline:hover {
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -388,6 +388,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .recipe-page-hero .handwritten {
   display: block;
   margin-bottom: 0.4rem;
+  color: var(--color-accent-light)
 }
 
 .recipe-meta-bar {
@@ -615,7 +616,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 .site-footer p {
-  opacity: 0.7;
   font-size: 0.9rem;
 }
 
