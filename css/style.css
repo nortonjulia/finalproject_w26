@@ -1,19 +1,18 @@
-/* ===== CSS VARIABLES ===== */
 :root {
   --color-bg: #fdf6ed;
   --color-bg-card: #fffaf4;
   --color-bg-dark: #2e1f0e;
   --color-primary: #8b4513;
-  --color-primary-light: #c47a3a;
+  --color-primary-light: #b36f34;
   --color-primary-dark: #5c2d0a;
   --color-accent: #d4956a;
-  --color-accent-light: #f0c9a8;
+  --color-accent-light: #e1a473;
   --color-text: #3b2310;
   --color-text-muted: #7a5c44;
   --color-text-light: #a07850;
   --color-border: #e0c9b0;
   --color-tip-bg: #fef3e2;
-  --color-tip-border: #e8b76a;
+  --color-tip-border: #af884a;
 
   --font-heading: 'Playfair Display', 'Georgia', serif;
   --font-body: 'Lora', 'Georgia', serif;
@@ -37,7 +36,6 @@
   --max-width: 1100px;
 }
 
-/* ===== RESET ===== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -75,7 +73,6 @@ ul {
   list-style: none;
 }
 
-/* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--color-primary-dark);
@@ -92,14 +89,12 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-primary-light);
 }
 
-/* ===== LAYOUT ===== */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
 }
 
-/* ===== HEADER / NAV ===== */
 .site-header {
   background-color: var(--color-bg-dark);
   padding: var(--spacing-sm) 0;
@@ -150,7 +145,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-accent);
 }
 
-/* ===== HERO ===== */
 .hero {
   background-color: var(--color-bg-dark);
   color: var(--color-accent-light);
@@ -226,7 +220,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: #fff;
 }
 
-/* ===== SECTION STYLES ===== */
 .section {
   padding: var(--spacing-xl) 0;
 }
@@ -252,7 +245,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   margin: var(--spacing-sm) 0 var(--spacing-md);
 }
 
-/* ===== RECIPE CARDS GRID ===== */
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -329,7 +321,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   content: '🍽 ';
 }
 
-/* ===== ABOUT STRIP ===== */
 .about-strip {
   background-color: var(--color-tip-bg);
   border-top: 1px solid var(--color-tip-border);
@@ -354,7 +345,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   line-height: 1;
 }
 
-/* ===== RECIPE PAGE LAYOUT ===== */
 .recipe-page-hero {
   background-color: var(--color-bg-dark);
   padding: var(--spacing-lg) 0;
@@ -417,7 +407,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   border: 1px solid rgba(255,255,255,0.12);
 }
 
-/* ===== RECIPE CONTENT GRID ===== */
 .recipe-content-grid {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -495,7 +484,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 .step-photo {
-  margin: 1rem 0 1.5rem 44px; /* 44px left indent lines it up past the step number circles */
+  margin: 1rem 0 1.5rem 44px; 
   border-radius: var(--radius-md);
   overflow: hidden;
 }
@@ -515,7 +504,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   margin-top: 0.4rem;
 }
 
-/* ===== TIPS SIDEBAR ===== */
 .tips-sidebar {
   position: sticky;
   top: 80px;
@@ -563,7 +551,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   margin-bottom: var(--spacing-sm);
 }
 
-/* ===== MODAL ===== */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -619,7 +606,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   font-size: 0.95rem;
 }
 
-/* ===== FOOTER ===== */
 .site-footer {
   background-color: var(--color-bg-dark);
   color: var(--color-accent-light);
@@ -640,7 +626,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-accent);
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .about-strip .container {
     grid-template-columns: 1fr;
@@ -670,7 +655,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   }
 }
 
-/* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
